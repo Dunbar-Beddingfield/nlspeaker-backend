@@ -15,6 +15,7 @@ import { TestimonialsModule } from './testimonials/testimonials.module.js';
 import { MediaModule } from './media/media.module.js';
 import { BlogModule } from './blog/blog.module.js';
 import { InquiriesModule } from './inquiries/inquiries.module.js';
+import { SpeakersModule } from './speakers/speakers.module.js';
 import { JwtAuthGuard } from './auth/guards/jwt-auth.guard.js';
 import { LoggerMiddleware } from './common/middleware/logger.middleware.js';
 
@@ -48,6 +49,7 @@ import { LoggerMiddleware } from './common/middleware/logger.middleware.js';
     MediaModule,
     BlogModule,
     InquiriesModule,
+    SpeakersModule,
   ],
   providers: [
     { provide: APP_GUARD, useClass: JwtAuthGuard },
